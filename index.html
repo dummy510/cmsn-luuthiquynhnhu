@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./app.js" defer></script>
-    <title>Document</title>
+    <title>Doanh Nghiệp - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="loading">
-        <div class="boxHeartImg">
-            <div class="heartItem item1">
-                <img src="./image/heart.png" alt="">
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-blue-600">Doanh Nghiệp</h1>
+            <ul class="flex space-x-6 text-gray-700">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#pricing">Bảng Giá</a></li>
+                <li><a href="#process">Quy Trình</a></li>
+                <li><a href="#projects">Dự Án</a></li>
+                <li><a href="#news">Tin Tức</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-blue-500 text-white">
+        <h1 class="text-5xl font-bold">Chào mừng đến với Doanh Nghiệp</h1>
+        <p class="mt-4 text-lg">Chúng tôi cung cấp giải pháp tối ưu cho doanh nghiệp của bạn.</p>
+        <a href="#contact" class="mt-6 bg-white text-blue-500 px-6 py-3 rounded-lg shadow-md">Liên Hệ Ngay</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-semibold">Dịch Vụ</h2>
+        <div class="flex flex-wrap justify-center mt-8">
+            <div class="max-w-sm p-6 m-4 bg-gray-100 rounded-lg shadow-md transition-transform hover:scale-105">
+                <h3 class="text-xl font-bold">🎯 Tư Vấn Kinh Doanh</h3>
+                <p class="text-gray-600 mt-2">Giải pháp tối ưu giúp doanh nghiệp phát triển.</p>
             </div>
-            <div class="heartItem item2">
-                <img src="./image/heart.png" alt="">
-            </div>
-            <div class="heartItem item3">
-                <img src="./image/heart.png" alt="">
+            <div class="max-w-sm p-6 m-4 bg-gray-100 rounded-lg shadow-md transition-transform hover:scale-105">
+                <h3 class="text-xl font-bold">📈 Marketing Online</h3>
+                <p class="text-gray-600 mt-2">Chiến lược marketing giúp bạn tiếp cận khách hàng.</p>
             </div>
         </div>
-        <div class="heartBox">
-            <div class="heart"></div>
-        </div>
-        <div class="progress-bar">
-            <div class="progress"></div>
-            <div class="percent">100%</div>
-        </div>
-        <h2 class="textBox">
-            <span class="textLoad">loading love</span>
-            <span class="cricle1">.</span>
-            <span class="cricle2">.</span>
-            <span class="cricle3">.</span>
-        </h2>
-        <div class="buttonCLick">
-            <img src="./image/cursor.png" alt="">
-            <div class="button">
-                <p class="textBtn"></p>
-            </div>
-        </div>
-    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-semibold">Liên Hệ</h2>
+        <p class="text-gray-600 mt-4">Hãy liên hệ với chúng tôi để được tư vấn.</p>
+        <form class="max-w-lg mx-auto mt-8 bg-white p-6 rounded-lg shadow-md">
+            <input type="text" placeholder="Họ và Tên" class="w-full p-3 mb-4 border rounded-md">
+            <input type="email" placeholder="Email" class="w-full p-3 mb-4 border rounded-md">
+            <textarea placeholder="Tin nhắn" class="w-full p-3 mb-4 border rounded-md"></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg shadow-md hover:bg-blue-600">Gửi Ngay</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-200">
+        <p class="text-gray-600">&copy; 2024 Doanh Nghiệp. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
